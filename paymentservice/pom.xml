@@ -9,10 +9,10 @@
         <version>2.4.0-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>be.reactiveprogramming</groupId>
+    <groupId>br.googolplex</groupId>
     <artifactId>NFRpaymentservice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>paymentservice</name>
+    <name>NFRpaymentservice</name>
     <description>RSocket Nota Fiscal Reativa</description>
 
     <properties>
