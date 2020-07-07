@@ -1,6 +1,5 @@
 package br.googolplex.paymentservice;
 
-import br.googolplex.paymentservice.paymentreceiver.PaymentReceiver;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

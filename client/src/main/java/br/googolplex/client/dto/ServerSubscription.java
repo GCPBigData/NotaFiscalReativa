@@ -1,13 +1,13 @@
-package be.reactiveprogramming.coffeesocket.client.dto;
+package br.googolplex.client.dto;
 
-public class CoffeeServerSubscription {
+public class ServerSubscription {
 
     private String name;
 
-    public CoffeeServerSubscription() {
+    public ServerSubscription() {
     }
 
-    public CoffeeServerSubscription(String name) {
+    public ServerSubscription(String name) {
         this.name = name;
     }
 

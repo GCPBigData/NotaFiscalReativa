@@ -1,15 +1,15 @@
-package be.reactiveprogramming.coffeesocket.client.dto;
+package br.googolplex.client.dto;
 
-public class CoffeeOrder {
+public class Order {
 
     private String tableNumber;
     private String coffeeType;
     private int amount;
 
-    public CoffeeOrder() {
+    public Order() {
     }
 
-    public CoffeeOrder(String tableNumber, String coffeeType, int amount) {
+    public Order(String tableNumber, String coffeeType, int amount) {
         this.tableNumber = tableNumber;
         this.coffeeType = coffeeType;
         this.amount = amount;
@@ -41,7 +41,7 @@ public class CoffeeOrder {
 
     @Override
     public String toString() {
-        return "CoffeeOrder{" +
+        return "Order{" +
                 "tableNumber='" + tableNumber + '\'' +
                 ", coffeeType='" + coffeeType + '\'' +
                 ", amount=" + amount +

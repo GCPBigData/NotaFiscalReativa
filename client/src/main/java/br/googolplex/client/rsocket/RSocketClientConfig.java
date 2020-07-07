@@ -1,4 +1,4 @@
-package be.reactiveprogramming.coffeesocket.client.rsocket;
+package br.googolplex.client.rsocket;
 
 import io.rsocket.RSocket;
 import io.rsocket.RSocketFactory;
@@ -10,12 +10,13 @@ import org.springframework.messaging.rsocket.RSocketRequester;
 import org.springframework.messaging.rsocket.RSocketStrategies;
 import org.springframework.util.MimeTypeUtils;
 
+import static io.rsocket.RSocketFactory.*;
+
 @Configuration
 public class RSocketClientConfig {
     @Bean
     RSocket rSocket() {
-        return RSocketFactory
-                .connect()
+        return connect()
                 .dataMimeType(MimeTypeUtils.APPLICATION_JSON_VALUE)
                 .frameDecoder(PayloadDecoder.ZERO_COPY)
                 .transport(TcpClientTransport.create(7070))
@@ -25,6 +26,7 @@ public class RSocketClientConfig {
 
     @Bean
     RSocketRequester rSocketRequester(RSocketStrategies rSocketStrategies) {
-        return RSocketRequester.wrap(rSocket(), MimeTypeUtils.APPLICATION_JSON, rSocketStrategies);
+        //return RSocketRequester.wrap(rSocket(), MimeTypeUtils.APPLICATION_JSON, rSocketStrategies);
+        return  RSocketRequester.wrap(rSocket(),MimeTypeUtils.APPLICATION_JSON,MimeTypeUtils.APPLICATION_OCTET_STREAM, rSocketStrategies);
     }
 }

@@ -1,5 +1,5 @@
-be\reactiveprogramming\coffeesocket\paymentservice\paymentreceiver\PaymentReceiver$1.class
-be\reactiveprogramming\coffeesocket\paymentservice\dto\PaymentInformation.class
-be\reactiveprogramming\coffeesocket\paymentservice\paymentreceiver\PaymentReceiver.class
-be\reactiveprogramming\coffeesocket\paymentservice\PaymentServiceApplication.class
-be\reactiveprogramming\coffeesocket\paymentservice\dto\PaymentResult.class
+br\googolplex\paymentservice\dto\PaymentInformation.class
+br\googolplex\paymentservice\PaymentServiceApplication.class
+br\googolplex\paymentservice\dto\PaymentResult.class
+br\googolplex\paymentservice\PaymentReceiver$1.class
+br\googolplex\paymentservice\PaymentReceiver.class

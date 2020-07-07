@@ -1,4 +1,4 @@
-package br.googolplex.paymentservice.paymentreceiver;
+package br.googolplex.paymentservice;
 
 import br.googolplex.paymentservice.dto.PaymentInformation;
 import br.googolplex.paymentservice.dto.PaymentResult;

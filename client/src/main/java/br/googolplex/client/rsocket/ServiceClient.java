@@ -1,25 +1,25 @@
-package be.reactiveprogramming.coffeesocket.client.rsocket;
+package br.googolplex.client.rsocket;
 
-import be.reactiveprogramming.coffeesocket.client.dto.CoffeeOrder;
-import be.reactiveprogramming.coffeesocket.client.dto.CoffeeServerSubscription;
+import br.googolplex.client.dto.Order;
+import br.googolplex.client.dto.ServerSubscription;
 import org.springframework.messaging.rsocket.RSocketRequester;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Flux;
 
 @Component
-public class CoffeeServiceClient {
+public class ServiceClient {
 
     private final RSocketRequester requester;
 
-    CoffeeServiceClient(RSocketRequester requester) {
+    ServiceClient(RSocketRequester requester) {
         this.requester = requester;
     }
 
-    public Flux<CoffeeOrder> receiveCoffeeOrders() {
+    public Flux<Order> receiveOrders() {
         return this.requester
-                .route("coffeeOrders")
-                .data(new CoffeeServerSubscription("WaiterName"))
-                .retrieveFlux(CoffeeOrder.class)
+                .route("orders")
+                .data(new ServerSubscription("WaiterName"))
+                .retrieveFlux(Order.class)
                 .log();
     }
 }
