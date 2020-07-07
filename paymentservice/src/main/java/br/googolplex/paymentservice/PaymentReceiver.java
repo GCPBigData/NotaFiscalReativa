@@ -8,6 +8,11 @@ import com.rabbitmq.client.*;
 
 import java.io.IOException;
 
+/**
+ * @author Jose R F Junior
+ * web2ajax@gmail.com
+ * Santiago Chile 07/07/2020
+ */
 public class PaymentReceiver {
 
     private ObjectMapper objectMapper = new ObjectMapper();

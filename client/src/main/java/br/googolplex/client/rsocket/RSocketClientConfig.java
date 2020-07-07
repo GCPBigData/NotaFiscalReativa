@@ -1,7 +1,6 @@
 package br.googolplex.client.rsocket;
 
 import io.rsocket.RSocket;
-import io.rsocket.RSocketFactory;
 import io.rsocket.frame.decoder.PayloadDecoder;
 import io.rsocket.transport.netty.client.TcpClientTransport;
 import org.springframework.context.annotation.Bean;
@@ -10,8 +9,13 @@ import org.springframework.messaging.rsocket.RSocketRequester;
 import org.springframework.messaging.rsocket.RSocketStrategies;
 import org.springframework.util.MimeTypeUtils;
 
-import static io.rsocket.RSocketFactory.*;
+import static io.rsocket.RSocketFactory.connect;
 
+/**
+ * @author Jose R F Junior
+ * web2ajax@gmail.com
+ * Santiago Chile 07/07/2020
+ */
 @Configuration
 public class RSocketClientConfig {
     @Bean

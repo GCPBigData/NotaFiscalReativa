@@ -18,6 +18,11 @@ import java.util.Random;
 
 import static java.time.temporal.ChronoUnit.SECONDS;
 
+/**
+ * @author Jose R F Junior
+ * web2ajax@gmail.com
+ * Santiago Chile 07/07/2020
+ */
 @Controller
 public class CoffeeOrderController {
 

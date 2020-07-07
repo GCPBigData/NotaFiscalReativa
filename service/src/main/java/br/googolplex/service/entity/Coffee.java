@@ -2,6 +2,11 @@ package br.googolplex.service.entity;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
+/**
+ * @author Jose R F Junior
+ * web2ajax@gmail.com
+ * Santiago Chile 07/07/2020
+ */
 @Document
 public class Coffee {
 

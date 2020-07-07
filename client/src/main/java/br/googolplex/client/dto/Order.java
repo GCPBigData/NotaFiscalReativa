@@ -1,5 +1,10 @@
 package br.googolplex.client.dto;
 
+/**
+ * @author Jose R F Junior
+ * web2ajax@gmail.com
+ * Santiago Chile 07/07/2020
+ */
 public class Order {
 
     private String tableNumber;

@@ -1,5 +1,10 @@
 package br.googolplex.paymentservice.dto;
 
+/**
+ * @author Jose R F Junior
+ * web2ajax@gmail.com
+ * Santiago Chile 07/07/2020
+ */
 public class PaymentInformation {
 
     private String tableNumber;
