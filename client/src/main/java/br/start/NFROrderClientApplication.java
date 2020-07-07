@@ -1,4 +1,4 @@
-package br.googolplex.client;
+package br.start;
 
 import br.googolplex.client.dto.Order;
 import br.googolplex.client.rsocket.ServiceClient;

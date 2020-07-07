@@ -46,7 +46,7 @@ public class Order {
 
     @Override
     public String toString() {
-        return "CoffeeOrder{" +
+        return "Order{" +
                 "tableNumber='" + tableNumber + '\'' +
                 ", coffeeType='" + coffeeType + '\'' +
                 ", amount=" + amount +

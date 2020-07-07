@@ -1,4 +1,4 @@
-package br.googolplex.paymentservice;
+package br.start;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,11 +9,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Santiago Chile 07/07/2020
  */
 @SpringBootApplication
-public class PaymentServiceApplication {
+public class OrderServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(PaymentServiceApplication.class, args);
-        new PaymentReceiver().run();
+        SpringApplication.run(OrderServiceApplication.class, args);
     }
 
 }
